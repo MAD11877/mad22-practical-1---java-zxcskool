@@ -34,9 +34,8 @@ public class Question5
     int i = 0;
     ArrayList<Integer> numblist = new ArrayList<>();
     while (i < amtofno){
-      Scanner in2 = new Scanner(System.in);
       /*System.out.print("Enter an integer: ");*/
-      int numbs = in2.nextInt();
+      int numbs = in.nextInt();
       numblist.add(numbs);
       i++;
     }
@@ -56,6 +55,6 @@ public class Question5
         }
       }
     }
-    System.out.println("Mode is " + mode);
+    System.out.println(/*"Mode is "*/ + mode);
   }
 }
