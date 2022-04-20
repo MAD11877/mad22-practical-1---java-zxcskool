@@ -10,7 +10,6 @@ public class Question3
      * Hint: in.nextInt() to read integer
      */
      
-    System.out.print("Enter an integer: ");
     Scanner intinput = new Scanner(System.in);
     int int1 = intinput.nextInt();
 
