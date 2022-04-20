@@ -27,6 +27,34 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    System.out.print("Enter max number of integer: ");
+    int amtofno = in.nextInt();
+
+    int i = 0;
+    ArrayList<Integer> numblist = new ArrayList<>();
+    while (i < amtofno){
+      Scanner in2 = new Scanner(System.in);
+      System.out.print("Enter an integer: ");
+      int numbs = in2.nextInt();
+      numblist.add(numbs);
+      i++;
+    }
+
+    int mode = numblist.get(0);
+    int countmode = 0;
+    for (int j = 0; j < numblist.size(); j ++){
+      int intvalue = numblist.get(j);
+      int count = 0;
+      for (int k = 0; k < numblist.size(); k++){
+        if (numblist.get(k) == intvalue){
+          count++;
+        }
+        if (count > countmode){
+          mode = numblist.get(k);
+          countmode = count;
+        }
+      }
+    }
+    System.out.println("Mode is " + mode);
   }
 }
