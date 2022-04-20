@@ -28,14 +28,14 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Enter max number of integer: ");
+    /*System.out.print("Enter max number of integer: ");*/
     int amtofno = in.nextInt();
 
     int i = 0;
     ArrayList<Integer> numblist = new ArrayList<>();
     while (i < amtofno){
       Scanner in2 = new Scanner(System.in);
-      System.out.print("Enter an integer: ");
+      /*System.out.print("Enter an integer: ");*/
       int numbs = in2.nextInt();
       numblist.add(numbs);
       i++;
